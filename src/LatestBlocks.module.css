@@ -1,0 +1,71 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  width: 100vw;
+  padding: 1rem;
+}
+
+.container .blocks {
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  border: 1px solid #c0c0c0;
+  width: 50vw;
+  box-shadow: 12px 12px 2px 1px rgba(200, 200, 200, 0.2);
+}
+
+.container .blocks h4 {
+  font-size: small;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 20% 60% auto;
+  border-bottom: 1px solid #c0c0c0;
+}
+
+.grid:last-child {
+  border-bottom: none;
+}
+
+.grid .blocknum {
+  grid-column: 1;
+  grid-row: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-left: 0.5rem;
+}
+
+.grid .recipient {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.grid .blockReward {
+  grid-column: 3;
+  grid-row: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: xx-small;
+}
+
+.grid .blockReward > div {
+  display: inline-block;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+  padding: 0.3rem;
+  cursor: pointer;
+}
+
+.grid .data {
+  grid-column: span 3;
+  grid-row: 2;
+}
+
+.small {
+  font-size: xx-small;
+}
